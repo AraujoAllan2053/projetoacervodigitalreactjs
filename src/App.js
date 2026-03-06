@@ -1,16 +1,13 @@
-import logo from './logo.svg';
+import { Outlet } from 'react-router-dom';
+import NavBar from './componentes/NavBar';
 import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-          Learn React - Douglas S. Johnson
-    
-      </header>
-    </div>
+    <>
+      <h1>Acervo Digital</h1>
+      <NavBar />
+      <Outlet />
+    </>
   );
 }
-
 export default App;
