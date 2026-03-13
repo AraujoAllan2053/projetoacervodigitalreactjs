@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { supabase } from './infra/supabase/supabaseClient'
 
 function App() {
-  /*
+  
   const [dados, setDados] = useState([])
   useEffect(() => {
     async function fetchItems() {
@@ -14,7 +14,7 @@ function App() {
       setDados(data)
     }
     fetchItems()
-  }, []) */
+  }, []) 
   return (
     <>
       <h1>Acervo Digital</h1>
