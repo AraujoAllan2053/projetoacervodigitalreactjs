@@ -9,6 +9,7 @@ export default function NavBar(){
       <NavLink to="/admin/faculties">Estrutura</NavLink>
       <NavLink to="/admin/estado">Dados sistema</NavLink>
       <NavLink to="/login">Entrar</NavLink>
+      <NavLink to="/mapabrasil">Mapa Hard Rock</NavLink>
     </nav>
   );
 }

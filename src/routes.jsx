@@ -14,6 +14,8 @@ import Certificate from './pages/Certificate';
 import Dashboard from './pages/Dashboard';
 import Faculties from './pages/admin/Faculties';
 import Estado from './pages/admin/Estado';
+import MapPage from './mapabrasil/MapPage';
+import DetailsPage from './mapabrasil/DetailsPage';
 
 // Definição das rotas da aplicação utilizando createBrowserRouter.
 // A rota '/login' renderiza o componente Login, que é a página de login da aplicação.
@@ -35,6 +37,10 @@ export const router = createBrowserRouter([
 
       { path: 'admin/faculties', element:  <Faculties/> },
       { path: 'admin/estado', element:  <Estado/> },
+
+      { path: 'mapabrasil', element:  <MapPage/> },
+      { path: "/details/:id", element: <DetailsPage />,
+      },
 
     ]
   }
