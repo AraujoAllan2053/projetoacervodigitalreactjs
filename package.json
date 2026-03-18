@@ -1,6 +1,7 @@
 {
   "name": "projetoacervodigitalreactjs",
   "version": "0.1.0",
+  "homepage": "https://douglasrm87.github.io/projetoacervodigitalreactjs",
   "private": true,
   "dependencies": {
     "@supabase/supabase-js": "^2.99.1",
