@@ -31,6 +31,9 @@ jobs:
           # Aqui você colocará a URL do seu backend no futuro (OCI/Render/Railway)
           # Por enquanto, ele tentará ler do localhost ou falhará silenciosamente
           REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
+          # Adicione estas linhas para injetar as chaves no processo de build
+          REACT_APP_SUPABASE_URL: ${{ secrets.REACT_APP_SUPABASE_URL }}
+          REACT_APP_SUPABASE_ANON_KEY: ${{ secrets.REACT_APP_SUPABASE_ANON_KEY }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
