@@ -31,7 +31,8 @@ import DetailsPageBD from './mapabrasilargentinabd/DetailsPageBD';
  * Se estivermos em desenvolvimento (localhost), o basename será "/" (raiz).
  * Se estivermos em produção (GitHub), o basename será o nome do repositório.
  */
-const basename = process.env.NODE_ENV === 'production' 
+// Detecta se está em produção (GitHub Pages) ou desenvolvimento (Local)
+const currentBasename = process.env.NODE_ENV === 'production' 
   ? '/projetoacervodigitalreactjs' 
   : '/';
 
@@ -57,4 +58,14 @@ export const router = createBrowserRouter([
 
     ]
   }
-]);
+], {
+      basename: currentBasename // <--- A VARIÁVEL ENTRA AQUI
+  }
+);
+
+/*
+Por que isso funciona?
+Localmente (npm start): O Node define NODE_ENV como development. O basename vira /, e suas rotas funcionam em http://localhost:3000/mapabrasil.
+
+No GitHub Pages: Durante o npm run build executado pelo seu GitHub Action, o ambiente muda para production. O basename vira /projetoacervodigitalreactjs. Assim, o React entende que todos os links internos devem começar com esse prefixo, evitando que o navegador procure os arquivos na raiz do domínio github.io.
+*/
