@@ -20,6 +20,8 @@ import DetailsPageBD from './mapabrasilargentinabd/DetailsPageBD';
 import SubmitWorkTela02 from './pages/cadastrarformulario/SubmitWorkTela02';
 import SubmitWorkTela03 from './pages/cadastrarformulario/SubmitWorkTela03';
 import CertificateContainer from './pages/certificado/CertificateContainer';
+import MapaUnidadesFaculdade from './unidadesfaculdade/MapaUnidadesFaculdade';
+import ConsultaUnidade from './unidadesfaculdade/ConsultaUnidade';
 
 // Definição das rotas da aplicação utilizando createBrowserRouter.
 // A rota '/login' renderiza o componente Login, que é a página de login da aplicação.
@@ -63,6 +65,9 @@ export const router = createBrowserRouter([
       { path: "/details/:id", element: <DetailsPage />},
       { path: 'mapabrasilbd', element:  <MapPageBD/> },
       { path: "/detailsbd/:id", element: <DetailsPageBD />},
+
+      { path: "/unidadesfaculdade", element: <MapaUnidadesFaculdade />},
+      { path: "/detalhesunidade/:id", element: <ConsultaUnidade />},
 
     ]
   }
