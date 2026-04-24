@@ -1,9 +1,9 @@
 :root{
-  --primary:#003A8F;      /* azul institucional */
-  --secondary:#FFC72C;    /* amarelo destaque */
-  --bg:#F5F7FA;           /* fundo geral */
-  --text:#1F2937;         /* cinza escuro */
-  --border:#E5E7EB;
+  --primary:hsl(180, 100%, 50%);      /* azul institucional */
+  --secondary:#01ffff;    /* amarelo destaque */
+  --bg:#e60ec9;           /* fundo geral */
+  --text:#1f2337;         /* cinza escuro */
+  --border:#00ff40;
 }
 
 body{
@@ -20,7 +20,7 @@ body{
   justify-content:space-between;  
   gap:.5rem; /* Adiciona um espaçamento de 0.5rem entre os itens dentro da barra de navegação, melhorando a legibilidade e a estética visual. */
   padding:1rem 2rem; /* Adiciona um espaçamento interno de 1rem em torno do conteúdo da barra de navegação, proporcionando um layout mais agradável e organizado. */
-  background:#fff;/* Define a cor de fundo da barra de navegação como branco, criando um contraste visual com o conteúdo e melhorando a legibilidade. */ 
+  background:#000000;/* Define a cor de fundo da barra de navegação como branco, criando um contraste visual com o conteúdo e melhorando a legibilidade. */ 
   border-bottom:1px solid var(--border); /* Adiciona uma borda inferior de 1 pixel com a cor #e2e8f0, criando uma separação visual entre a barra de navegação e o restante do conteúdo da página, melhorando a estrutura visual e a organização. */
   box-shadow:0 2px 8px rgba(0,0,0,.05);
 }
@@ -48,7 +48,7 @@ Sem a classe .container, o conteúdo da página ficaria desorganizado e sem esti
   max-width:900px;
   margin:2rem auto;
   padding:2rem;
-  background:#fff;
+  background:#000000;
   border-radius:12px;
   box-shadow:0 10px 30px rgba(0,0,0,.08);
 
@@ -74,7 +74,7 @@ Usado no arquivo login.jsx.
 /* BOTÃO PADRÃO */
 .button{
   background:var(--primary);
-  color:#fff;
+  color:#000000;
   border:none;
   padding:.75rem 1.25rem;
   border-radius:8px;
@@ -84,7 +84,7 @@ Usado no arquivo login.jsx.
 }
 
 .button:hover{
-  background:#002C6D;
+  background:#000000;
 }
 
 /* BOTÃO SECUNDÁRIO */
@@ -101,7 +101,7 @@ Usado no arquivo login.jsx.
 .card{
   padding:1.5rem;
   border-radius:10px;
-  background:#fff;
+  background:#000000;
   border:1px solid var(--border);
   box-shadow:0 4px 12px rgba(0,0,0,.05);
 }
